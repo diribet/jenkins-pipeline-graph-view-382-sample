@@ -9,11 +9,9 @@ node() {
     }
 
     utils = load("utils.groovy")
-    echo "Loaded utils: ${utils}"
 
     stage("Load libs") {
         utilsInStage = load("utilsInStage.groovy")
-        echo "Loaded utils in stage: ${utilsInStage}"
     }
 
     stage("Test") {
